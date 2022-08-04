@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>Функциональное питание для котов "Cat Energy"</title>
 </head>
 <body class="page__body">
@@ -49,18 +50,18 @@
         <label class="form__label form__label--radio" for="advice">Не знаю (Нужен ваш совет)</label>
       </fieldset>
       <fieldset class="form__owner">
-        <h2 class="form__name">Контактные данные(владельца кота)</h2>
+        <legend class="form__name">Контактные данные(владельца кота)</legend>
         <label class="form__label" for="owner-email">Email:*</label>
         <input class="form__input" id="owner-email" type="email" name="owner-email" placeholder="kuklachev@gmail.com" required>
         <label class="form__label" for="owner-phone">Телефон:*</label>
         <input class="form__input" id="owner-phone" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90" required>
       </fieldset>
       <fieldset class="form__comment">
-        <h2 class="form__name">Комментарий</h2>
+        <legend class="form__name">Комментарий</legend>
         <textarea class="form__input" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="form__additional">
-        <h2 class="form__name">Дополнительно</h2>
+        <legend class="form__name">Дополнительно</legend>
         <input class="form__checkbox" id="sweet" type="checkbox" name="sweet" checked>
         <label class="form__label" for="sweet">Сахарозаменитель</label>
         <input class="form__checkbox" id="water" type="checkbox" name="water">
@@ -71,7 +72,7 @@
         <label class="form__label" for="vitamins">Витамины</label>
       </fieldset>
       <div class="form__send">
-        <button class="form__button" type="submit">Отправить заявку</button>
+        <button class="form__button btn btn--green" type="submit">Отправить заявку</button>
         <p class="form__note">* — Обязательные поля</p>
       </div>
       </div>
