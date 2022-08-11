@@ -26,4 +26,40 @@
 
 .example-cat-info__price {
   text-transform: uppercase;
+  text-align: center;
+}
+
+.example-cat-info__wrapper {
+  display: flex;
+}
+
+@media (min-width: @tablet-width) {
+  .example-cat__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 64px;
+  }
+
+  .example-cat__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 53px;
+  }
+
+  .example-cat-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example-cat {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .example-cat__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 }

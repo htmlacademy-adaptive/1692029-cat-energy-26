@@ -4,6 +4,10 @@
   background-position: center;
   background-color: #68b738;
   background-size: cover;
+  min-height: 289px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .offer__text {
@@ -12,4 +16,17 @@
   color: #ffffff;
   text-align: center;
   font-family: "Arial", sans-serif;
+}
+
+@media (min-width: @tablet-width) {
+  .offer {
+    min-height: 200px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .offer {
+    height: 288px;
+    width: 245px;
+  }
 }

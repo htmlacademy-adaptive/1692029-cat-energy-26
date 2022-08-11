@@ -49,3 +49,92 @@
   font-size: 16px;
   line-height: 20px;
 }
+
+.form__cat-info,
+.form__program,
+.form__owner,
+.form__comment,
+.form__additional {
+  border: none;
+}
+
+.form__cat-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__program {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.form__owner {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__additional {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  .form__additional-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .form__send {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__container-first {
+    display: flex;
+  }
+
+  .form {
+    padding: 0 120px;
+  }
+
+  .form__owner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__additional-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__title {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: normal;
+  }
+
+  .form__description {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__input,
+  .form__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form__name {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form__button {
+    font-size: 20px;
+    line-height: 0px;
+  }
+}

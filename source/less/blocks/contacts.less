@@ -1,3 +1,4 @@
+
 .contacts__invitation {
   font-size: 16px;
   line-height: 20px;
@@ -8,4 +9,32 @@
   color: #444444;
   font-family: "Arial", sans-serif;
   line-height: 20px;
+}
+
+.contacts__wrapper {
+  display: flex;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__map {
+    width: 768px;
+    height: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__invitation {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .contacts__address {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .form__note {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }

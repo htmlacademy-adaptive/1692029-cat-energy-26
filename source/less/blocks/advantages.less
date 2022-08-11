@@ -13,4 +13,36 @@
 .advantages__item {
   color: #444444;
   font-family: "Arial", sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__list {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .advantages__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .advantages__item {
+    width: 230px;
+    height: 280px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    width: 230px;
+    height: 280px;
+  }
 }
