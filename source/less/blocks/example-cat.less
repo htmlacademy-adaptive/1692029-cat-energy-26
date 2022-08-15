@@ -50,16 +50,26 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  .example-cat {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 40%, rgba(242, 242, 242, 1) 40%, rgba(242, 242, 242, 1) 100%);
+  }
 }
 
 @media (min-width: @desktop-width) {
   .example-cat {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 36%, rgba(242, 242, 242, 1) 36%, rgba(242, 242, 242, 1) 100%);
   }
 
-  .example-cat__wrapper {
-    display: flex;
-    flex-direction: column;
+  .example-cat__title {
+    grid-area: 1/1;
   }
+
+  .example-cat-info__description {
+    grid-area: 2/1;
+  }
+
 }

@@ -8,6 +8,7 @@
 </head>
 <body class="page__body">
   <header class="main-header">
+    <div class="wrapper">
     <nav class="main-nav">
       <h2 class="visually-hidden">Навигация по сайту</h2>
       <a class="main-nav__logo">
@@ -30,23 +31,24 @@
           </ul>
           </div>
     </nav>
+    </div>
+    <section class="main-promo">
+      <div class="main-promo__wrapper">
+      <div class="main-promo__inner">
+        <h1 class="main-promo__title">Функциональное питание для котов</h1>
+        <p class="main-promo__description">Занялся собой? Займись котом!</p>
+      </div>
+      <img class="main-promo__image" src="img/index-can-mobile.png" width="280px" height="270px" alt="Cat energy с курицей">
+      <a class="main-promo__button btn btn--green" href="form.html">Подобрать программу</a>
+      </div>
+      </div>
+    </section>
+    </div>
   </header>
   <main>
-<section class="main-promo">
-  <div class="main-promo__container container">
-  <div class="main-promo__wrapper">
-  <div class="main-promo__inner">
-    <h1 class="main-promo__title">Функциональное питание для котов</h1>
-    <p class="main-promo__description">Занялся собой? Займись котом!</p>
-  </div>
-  <img class="main-promo__image" src="img/index-can-mobile.png" width="280px" height="270px" alt="Cat energy с курицей">
-  <a class="main-promo__button btn btn--green" href="form.html">Подобрать программу</a>
-  </div>
-  </div>
-</section>
 <section class="programs-category">
 <h2 class="visually-hidden">Магазин с питанием для котиков "Cat Energy"</h2>
-<div class="programs-category__wrapper">
+<div class="programs-category__wrapper wrapper">
 <article class="programs-category__item program-item">
   <h3 class="program-item__title program-item__title--wieght-loss">Похудение</h3>
   <p class="program-item__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -60,6 +62,7 @@
 </div>
 </section>
 <section class="advantages">
+  <div class="wrapper">
   <h2 class="advantages__title">Как это работает</h2>
   <ul class="advantages__list">
     <li class="advantages__item advantages__item--health">Функциональное питание содержит только полезные питательные вещества.</li>
@@ -67,11 +70,12 @@
     <li class="advantages__item advantages__item--meal">Замените один-два приема обычной еды на наше функциональное питание.</li>
     <li class="advantages__item advantages__item--time">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
   </ul>
+  </div>
 </section>
 <section class="example-cat">
-  <div class="example-cat__wrapper">
+  <div class="example-cat__wrapper wrapper">
   <h2 class="example-cat__title">Живой пример</h2>
-  <p class="example-cat__description"> Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+  <p class="example-cat__description"> Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. <br> Отличный результат без изнуряющих тренировок! <br> При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
   <div class="example-cat__info example-cat-info">
     <div class="example-cat-info__wrapper">
     <div class="example-cat-info__item">
@@ -90,17 +94,16 @@
   <img class="slider-image slider-image-before" src="#" alt="Котик до">
   <img class="slider-image slider-image-after" src="#" alt="Котик после">
 </div>
-  <div class="example-cat__slider slider">
-    <button class="slider__before">Было</button>
+    <button class="slider__before"></button>
     <div class="slider__bar">
       <span class="visually-hidden">Переключатель</span>
     </div>
-    <button class="slider__after">Стало</button>
+    <button class="slider__after"></button>
   </div>
 </section>
 <section class="contacts">
   <h2 class="visually-hidden">Контакты</h2>
-  <div class="contacts__wrapper">
+  <div class="contacts__wrapper wrapper">
   <p class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</p>
   <p class="contacts__address">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
   </div>
@@ -110,7 +113,7 @@
 </section>
   </main>
   <footer class="footer-container">
-    <div class="footer-container__wrapper">
+    <div class="footer-container__wrapper wrapper">
     <a class="footer-container__logo">
       <img class="footer-container__logo-image" src="img/logo-footer.svg" width="128px" height="24px" alt="Логотип Cat Energy">
     </a>
