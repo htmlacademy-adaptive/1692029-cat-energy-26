@@ -1,9 +1,14 @@
-.main-promo__inner {
+.main-promo {
   background-color: #65a93c;
-  background-image: url("../img/index-background.jpg");
+  background-image: url("../img/index-background.jpg"), linear-gradient(180deg, #64a83b 62.4%, #ffffff 62.4%);
   background-repeat: no-repeat;
-  background-position: center 0;
-  text-align: center;
+  background-position: top center;
+  background-size: 320px 302px, 100%;
+}
+
+.main-promo__wrapper {
+  min-width: 320px;
+  margin: 0 auto;
 }
 
 .main-promo__title {
@@ -18,4 +23,80 @@
   font-family: inherit;
   color: #ffffff;
   text-transform: uppercase;
+}
+
+.main-promo__image {
+  width: 280px;
+  height: 271px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-promo {
+    background-image: none;
+    background-color: #ffffff;
+  }
+
+  .main-promo__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 768px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+  .main-promo__inner {
+    background-image: none;
+    background-color: #ffffff;
+    width: 414px;
+  }
+
+  .main-promo__title {
+    color: #000000;
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .main-promo__image {
+    z-index: 2;
+  }
+
+  .main-promo__button {
+    width: 344px;
+  }
+
+  .main-promo__description {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: #000000;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-promo__title {
+    color: #000000;
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .main-promo {
+    background-image: url("../img/index-background.jpg"), linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(104, 183, 56, 1) 50%, rgba(104, 183, 56, 1) 100%);
+    background-size: 720px auto, 100%;
+    background-position: top right;
+  }
+
+  .main-promo__button {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .main-promo__wrapper {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 110px;
+    box-sizing: border-box;
+  }
 }
