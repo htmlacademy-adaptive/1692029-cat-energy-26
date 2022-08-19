@@ -1,3 +1,25 @@
-.main-header {
+header.main-header {
   background-color: #ffffff;
+  padding-top: 0;
+}
+
+.main-header__logo {
+  height: 65px;
+}
+
+.main-header__logo img {
+  width: 190px;
+  height: 38px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    padding-top: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  header.main-header {
+    padding-top: 0;
+  }
 }

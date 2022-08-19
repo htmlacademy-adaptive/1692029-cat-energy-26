@@ -7,6 +7,13 @@
 .program-item__description {
   color: #444444;
   font-family: "Arial", sans-serif;
+  margin-bottom: 23px;
+}
+
+.program-item {
+  background-color: #f2f2f2;
+  padding: 30px 20px 22px;
+  margin: 20px 0 19px;
 }
 
 .program-item__button {
@@ -15,16 +22,15 @@
   color: #000000;
   font-size: 16px;
   line-height: 16px;
-}
-
-.program-item {
-  background-color: #f2f2f2;
+  padding-top: 19px;
+  border-top: 1px solid #d9d9d9;
+  display: block;
 }
 
 @media (min-width: @tablet-width) {
   .program-item__title {
     font-size: 36px;
-    line-height: 37px;
+    line-height: 36px;
   }
 
   .program-item__description {
@@ -34,11 +40,21 @@
 
   .program-item {
     width: 708px;
+    padding: 77px 281px 57px 52px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+
+  .program-item__button {
+    border: none;
+    font-size: 20px;
+    line-height: 29px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .program-item {
     width: 570px;
+    padding: 75px 50px 59px 52px;
   }
 }
