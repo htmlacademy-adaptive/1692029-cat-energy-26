@@ -17,7 +17,7 @@
   font-size: 12px;
   line-height: 16px;
   color: #444444;
-  font-family: "Arial", sans-serif;
+  font-family: 'Arial', sans-serif;
 }
 
 .catalog-item {
@@ -47,14 +47,48 @@
 }
 
 @media (min-width: @tablet-width) {
-  .catalog-item {
-    min-width: 324px;
+  .catalog-item__title {
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 37px;
+    padding-right: 36px;
+    margin-left: -1px;
+  }
+
+  .catalog-item__text {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .catalog-item__wrapper {
+    display: block;
+  }
+
+  .catalog-item__inner {
+    width: calc(100% + 2px);
+    margin: 0;
+  }
+
+  .catalog-item__image-link {
+    margin-bottom: 34px;
+  }
+
+  .catalog-item__title-link {
+    display: inline-block;
+    width: 159px;
+  }
+
+  .catalog-item__features {
+    margin-bottom: 33px;
+  }
+
+  .catalog-item__row {
+    border-bottom: 1px solid #cdcdcd;
+    padding: 10px 0 8px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .catalog-item {
-    min-width: 245px;
-    gap: 80px;
-  }
 }
