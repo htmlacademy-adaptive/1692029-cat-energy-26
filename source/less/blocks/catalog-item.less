@@ -46,6 +46,10 @@
   width: 100%;
 }
 
+img.catalog-item__image {
+  margin: 18px 26px;
+}
+
 @media (min-width: @tablet-width) {
   .catalog-item__title {
     font-size: 20px;
@@ -87,5 +91,12 @@
     padding: 10px 0 8px;
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  article.catalog__item.catalog-item {
+    width: 245px;
+    padding: 0;
   }
 }

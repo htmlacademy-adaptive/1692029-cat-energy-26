@@ -8,9 +8,16 @@
   display: flex;
   justify-content: center;
   padding: 50px 55px 42px;
+  box-sizing: border-box;
   margin: 0 0 35px;
   align-items: flex-end;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/offer-background@2x.png");
+    background-size: 100% auto;
+  }
 }
+
 
 .offer__text {
   font-size: 16px;
@@ -29,6 +36,8 @@
     justify-content: flex-end;
     align-items: center;
     margin-bottom: 46px;
+    background-position: -2px -319px;
+    background-size: cover;
   }
 
   .offer__text {

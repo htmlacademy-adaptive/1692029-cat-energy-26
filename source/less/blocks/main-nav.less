@@ -1,10 +1,11 @@
 .main-nav__logo-image {
   width: 191px;
   height: 38px;
+  margin-left: 20px;
 }
 
 .main-nav {
-  width: 320px;
+  width: 100%;
   box-sizing: border-box;
   position: relative;
   margin: 12px 0 0;
@@ -73,7 +74,8 @@
     display: flex;
     justify-content: space-between;
     width: 440px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: 30px;
     flex-wrap: wrap;
     border: none;
   }
@@ -82,11 +84,15 @@
 @media (min-width: @desktop-width) {
   .main-nav {
     display: flex;
-    width: 1220px;
+    width: 1440px;
     margin: 0 auto;
     justify-content: space-between;
     z-index: 10;
-    padding-top: 53px;
+    padding: 0 110px 0 110px;
+  }
+
+  .main-nav--catalog {
+    padding-top: 0;
   }
 
   .main-nav__toggle {

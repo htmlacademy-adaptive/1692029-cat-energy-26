@@ -47,6 +47,7 @@
 
   .contacts {
     align-items: center;
+    margin: 0;
   }
 
   .contacts--catalog {
@@ -66,6 +67,17 @@
     text-align: right;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .contacts__wrapper.contacts-wrapper--form.wrapper {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 56px;
+  }
+
+  .contacts--form {
+    padding-top: 56px;
+    background-color: #f2f2f2;
   }
 }
 
@@ -104,5 +116,16 @@
   .contacts {
     padding: 0;
     margin: 0;
+  }
+
+  .contacts__wrapper.contacts__wrapper--form.wrapper {
+    padding: 59px 80px 56px 80px;
+    display: flex;
+    width: 565px;
+    position: absolute;
+    z-index: 100;
+    margin-left: 100px;
+    margin-top: 95px;
+    background-color: #ffffff;
   }
 }
