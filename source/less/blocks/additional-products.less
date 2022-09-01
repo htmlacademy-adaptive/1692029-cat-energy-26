@@ -3,11 +3,10 @@
   line-height: 24px;
   font-weight: 400;
   font-family: inherit;
-  margin: 29px 0 33px -21px;
+  margin: 25px 0 36px;
   background-color: #ffffff;
   padding-right: 22px;
-  padding-left: 22px;
-  width: 238px;
+  width: 226px;
 }
 
 .additional-products__list {
@@ -26,6 +25,13 @@
   margin-top: 12px;
   background-color: #68b738;
   z-index: -1;
+  left: calc((100vw - 266px) / 2);
+  top: 26px;
+}
+
+.additional-products {
+  position: relative;
+  overflow-x: hidden;
 }
 
 .additional-products__type {
@@ -73,14 +79,29 @@
 }
 
 @media (min-width: @tablet-width) {
+  .additional-products {
+    width: 755px;
+  }
+
   .additional-products__title {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 80px;
+    width: 360px;
   }
 
   .additional-products::before {
-    margin-top: 23px;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 5;
+    height: 3px;
+    margin-top: 12px;
+    background-color: #68b738;
+    z-index: -1;
+    left: calc((100vw - 266px) / 2);
+    top: 36px;
   }
 
   .additional-products__item {
@@ -115,9 +136,27 @@
   .additional-products__list {
     margin-bottom: 70px;
   }
+
+  .additional-products::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 5;
+    height: 3px;
+    margin-top: 12px;
+    background-color: #68b738;
+    z-index: -1;
+    left: calc((100vw - 266px) / 2);
+    top: 26px;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .additional-products {
+    width: 1353px;
+  }
+
   .additional-products__wrapper {
     display: flex;
     justify-content: space-between;
@@ -132,8 +171,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 25px;
-    padding-bottom: 27px;
+    padding-top: 15px;
+    padding-bottom: 17px;
     margin: 0;
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
@@ -142,7 +181,15 @@
   }
 
   .additional-products__button {
-    width: 100%;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    border: 0;
+    vertical-align: middle;
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+    width: 244px;
   }
 
   .additional-products__type {

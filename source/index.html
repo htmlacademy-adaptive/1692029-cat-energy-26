@@ -109,7 +109,7 @@
           </ul>
         </div>
       </section>
-      <section class="example-cat wrapper">
+      <section class="example-cat">
         <div class="example-cat__wrapper">
           <h2 class="example-cat__title">Живой пример</h2>
           <p class="example-cat__description">
@@ -132,11 +132,12 @@
               </div>
             </div>
             <p class="example-cat-info__price">
-              Затраты на питание 15000 рублей.
+              Затраты на питание <span class="example-cat-info__exact-price">15000 рублей.</span>
             </p>
           </div>
           <div class="example-cat__slider-images">
           <div class="example-cat__slider-image slider-image">
+            <div class="slider-image__wrapper">
             <picture>
               <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x"/>
               <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x" />
@@ -146,15 +147,18 @@
               alt="Котик до" width="280" height="256"
             />
             </picture>
+            </div>
+            <div class="slider-image__wrapper slider-image__wrapper--after">
             <pictue>
               <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x"/>
               <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x" />
             <img
-              class="slider-image slider-image--after"
+              class="slider-image__img slider-image__img--after"
               src="img/after-mobile@1x.png"
               alt="Котик после" width="280" height="256"
             />
             </pictue>
+            </div>
           </div>
         </div>
         <div class="slider__bar">

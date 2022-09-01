@@ -68,8 +68,9 @@ textarea.form__input.form__input--comment {
   padding-top: 26px;
   margin-bottom: 36px;
   padding-left: 0;
-  padding-right: 0;
+  padding-right: 14px;
   background-color: #ffffff;
+  width: 187px;
 }
 
 .form__note {
@@ -124,8 +125,9 @@ textarea.form__input.form__input--comment {
 .form__owner {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .form__inner--radio {
@@ -138,8 +140,35 @@ textarea.form__input.form__input--comment {
   position: absolute;
   width: 100%;
   height: 3px;
-  margin-top: -77px;
   left: 0;
+  top: 38px;
+  left: calc((100vw - 268px) / 2);
+  background-color: #68b738;
+  z-index: -1;
+}
+
+.form__comment::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  top: 38px;
+  left: calc((100vw - 268px) / 2);
+  background-color: #68b738;
+  z-index: -1;
+}
+
+.form__additional::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  top: 38px;
+  left: calc((100vw - 268px) / 2);
   background-color: #68b738;
   z-index: -1;
 }
@@ -147,13 +176,27 @@ textarea.form__input.form__input--comment {
 .form__additional {
   display: flex;
   flex-direction: column;
-  padding: 0 0 11px 0;
-  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.form__comment {
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .form__inner {
   display: flex;
   align-items: center;
+}
+
+.form__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -258,6 +301,13 @@ textarea.form__input.form__input--comment {
   .form__send.wrapper {
     margin-bottom: 55px;
   }
+
+  .form__wrapper {
+    width: 768px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 30px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -360,5 +410,11 @@ textarea.form__input.form__input--comment {
   .form__note {
     font-size: 16px;
     margin-top: 18px;
+  }
+
+  .form__wrapper {
+    width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 }

@@ -43,7 +43,6 @@
   </header>
   <main class="main-container">
     <form class="form" action="http://echo.htmlacademy.ru" method="post">
-      <div class="form__wrapper">
       <h1 class="page-title page-title--form">Подбор программы</h1>
       <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота </p>
       <div class="form__container-first">
@@ -77,6 +76,7 @@
       </fieldset>
       </div>
       <fieldset class="form__owner">
+        <div class="form__wrapper">
         <legend class="form__name">Контактные данные (владельца кота)</legend>
         <div class="form__inner">
         <label class="form__label" for="owner-email">Email:*</label>
@@ -86,12 +86,16 @@
         <label class="form__label" for="owner-phone">Телефон:*</label>
         <input class="form__input" id="owner-phone" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90" required>
         </div>
+        </div>
       </fieldset>
       <fieldset class="form__comment">
+        <div class="form__wrapper">
         <legend class="form__name">Комментарий</legend>
         <textarea class="form__input form__input--comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
       </fieldset>
       <fieldset class="form__additional">
+        <div class="form__wrapper">
         <legend class="form__name">Дополнительно</legend>
         <div class="form__additional-wrapper">
         <div class="form__inner form__inner--checkbox">
@@ -110,12 +114,12 @@
         <input class="form__checkbox" id="vitamins" type="checkbox" name="vitamins">
         <label class="form__label form__label--checkbox" for="vitamins">Витамины</label>
         </div>
+        </div>
       </fieldset>
       </div>
       <div class="form__send wrapper">
         <button class="form__button btn--green" type="submit">Отправить заявку</button>
         <p class="form__note">* — Обязательные поля</p>
-      </div>
       </div>
     </form>
     <section class="contacts contacts--form">
