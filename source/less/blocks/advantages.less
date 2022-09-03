@@ -17,7 +17,6 @@
   margin-bottom: 26px;
   display: flex;
   position: relative;
-  display: block;
 }
 
 .advantages__item::before {
@@ -30,21 +29,6 @@
   background-position: center;
   margin-right: 20px;
   flex-shrink: 0;
-}
-
-.advantages__item::after {
-  content: "1";
-  font-family: "Oswald","Arial",sans-serif;
-  font-weight: inherit;
-  position: absolute;
-  color: #f2f2f2;
-  z-index: -1;
-  font-size: 282px;
-  width: 150px;
-  padding: 0;
-  margin: 0;
-  top: 90px;
-  left: 122px;
 }
 
 .advantages__item--health::before {
@@ -87,6 +71,73 @@
     font-size: 16px;
     line-height: 20px;
     margin: 0;
+  }
+
+  .advantages__item::before {
+    display: block;
+    margin-bottom: 32px;
+    width: 80px;
+    height: 80px
+  }
+  
+  .advantages__item--health::after {
+    content: "1";
+    font-family: "Oswald","Arial",sans-serif;
+    font-weight: inherit;
+    position: absolute;
+    color: #f2f2f2;
+    z-index: -1;
+    font-size: 282px;
+    width: 150px;
+    padding: 0;
+    margin: 0;
+    top: 90px;
+    left: 122px;
+  }
+
+  .advantages__item--powder::after {
+    content: "2";
+    font-family: "Oswald","Arial",sans-serif;
+    font-weight: inherit;
+    position: absolute;
+    color: #f2f2f2;
+    z-index: -1;
+    font-size: 282px;
+    width: 150px;
+    padding: 0;
+    margin: 0;
+    top: 90px;
+    left: 122px;
+  }
+
+  .advantages__item--meal::after {
+    content: "3";
+    font-family: "Oswald","Arial",sans-serif;
+    font-weight: inherit;
+    position: absolute;
+    color: #f2f2f2;
+    z-index: -1;
+    font-size: 282px;
+    width: 150px;
+    padding: 0;
+    margin: 0;
+    top: 90px;
+    left: 122px;
+  }
+
+  .advantages__item--time::after {
+    content: "4";
+    font-family: "Oswald","Arial",sans-serif;
+    font-weight: inherit;
+    position: absolute;
+    color: #f2f2f2;
+    z-index: -1;
+    font-size: 282px;
+    width: 150px;
+    padding: 0;
+    margin: 0;
+    top: 90px;
+    left: 122px;
   }
 
   .advantages {

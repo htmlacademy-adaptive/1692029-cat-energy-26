@@ -44,6 +44,16 @@
   .site-list {
     display: flex;
   }
+
+  .site-list__item-current::after {
+    width: 71px;
+    left: 306px;
+    bottom: 11px;
+    height: 2px;
+    background-color: #68b738;
+    content: "";
+    position: absolute;
+  }
 }
 
 @media (min-width: @desktop-width) {
