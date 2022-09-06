@@ -54,6 +54,8 @@ textarea.form__input.form__input--comment {
 
 .form__comment {
   padding: 0;
+  overflow-x: hidden;
+  position: relative;
 }
 
 .form__label--checkbox {
@@ -140,7 +142,6 @@ textarea.form__input.form__input--comment {
   position: absolute;
   width: 100%;
   height: 3px;
-  left: 0;
   top: 38px;
   left: calc((100vw - 268px) / 2);
   background-color: #68b738;
@@ -153,7 +154,6 @@ textarea.form__input.form__input--comment {
   position: absolute;
   width: 100%;
   height: 3px;
-  left: 0;
   top: 38px;
   left: calc((100vw - 268px) / 2);
   background-color: #68b738;
@@ -166,7 +166,6 @@ textarea.form__input.form__input--comment {
   position: absolute;
   width: 100%;
   height: 3px;
-  left: 0;
   top: 38px;
   left: calc((100vw - 268px) / 2);
   background-color: #68b738;
@@ -176,12 +175,6 @@ textarea.form__input.form__input--comment {
 .form__additional {
   display: flex;
   flex-direction: column;
-  padding: 0;
-  overflow-x: hidden;
-  position: relative;
-}
-
-.form__comment {
   padding: 0;
   overflow-x: hidden;
   position: relative;
