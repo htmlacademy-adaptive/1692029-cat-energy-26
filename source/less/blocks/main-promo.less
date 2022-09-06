@@ -1,14 +1,22 @@
 .main-promo {
   background-color: #65a93c;
-  background-image: url("../img/index-background.jpg"), linear-gradient(180deg, #64a83b 62.4%, #ffffff 62.4%);
+  background-image: url("../img/index-background.jpg"),
+    linear-gradient(180deg, #64a83b 302px, #ffffff 302px);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 320px 302px, 100%;
 }
 
 .main-promo__wrapper {
-  min-width: 320px;
+  width: 320px;
   margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.main-promo__inner {
+  text-align: center;
+  padding-top: 27px;
 }
 
 .main-promo__title {
@@ -17,6 +25,8 @@
   color: #ffffff;
   font-family: inherit;
   font-weight: 400;
+  margin: 0 0 25px;
+  padding: 0;
 }
 
 .main-promo__description {
@@ -28,27 +38,56 @@
 .main-promo__image {
   width: 280px;
   height: 271px;
+  display: block;
+  margin-top: 29px;
+  margin-bottom: 2px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main-promo__button {
+  padding: 7px 0;
+  font-size: 14px;
+  line-height: 18px;
+  width: 280px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  border: 0;
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+}
+
+.main {
+  border-top: 1px solid #d9d9d9;
 }
 
 @media (min-width: @tablet-width) {
   .main-promo {
     background-image: none;
     background-color: #ffffff;
+    position: relative;
+    height: 851px;
   }
 
   .main-promo__wrapper {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 768px;
-    padding: 0 30px;
-    margin: 0 auto;
+    width: 283px;
+    margin: 0 117px;
+    box-sizing: border-box;
   }
 
   .main-promo__inner {
     background-image: none;
-    background-color: #ffffff;
-    width: 414px;
+    width: 417px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 3;
   }
 
   .main-promo__title {
@@ -56,14 +95,29 @@
     text-align: left;
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 41px;
+  }
+
+  .main {
+    border: none;
   }
 
   .main-promo__image {
     z-index: 2;
+    position: absolute;
+    height: 609px;
+    width: auto;
+    top: 256px;
+    margin: 0;
+    left: -105px;
   }
 
   .main-promo__button {
-    width: 344px;
+    display: block;
+    padding: 14px 26px;
+    z-index: 5;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .main-promo__description {
@@ -71,6 +125,7 @@
     line-height: 20px;
     text-align: left;
     color: #000000;
+    margin-bottom: 49px;
   }
 }
 
@@ -80,17 +135,35 @@
     text-align: left;
     font-size: 60px;
     line-height: 60px;
+    padding-top: 170px;
   }
 
   .main-promo {
-    background-image: url("../img/index-background.jpg"), linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(104, 183, 56, 1) 50%, rgba(104, 183, 56, 1) 100%);
+    background-image: url("../img/index-background.jpg"),
+      linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 1) 53%,
+        rgba(104, 183, 56, 1) 53%,
+        rgba(104, 183, 56, 1) 100%
+      );
     background-size: 720px auto, 100%;
     background-position: top right;
+    height: 694px;
   }
 
   .main-promo__button {
     font-size: 20px;
     line-height: 20px;
+    width: 244px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    border: 0;
+    vertical-align: middle;
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
   }
 
   .main-promo__wrapper {
@@ -98,5 +171,17 @@
     margin: 0 auto;
     padding: 0 110px;
     box-sizing: border-box;
+  }
+
+  .main-promo__image {
+    position: absolute;
+    width: auto;
+    height: 499px;
+    top: 133px;
+    left: 445px;
+  }
+
+  .main-promo__inner {
+    padding: 70px 80px 52px 80px;
   }
 }

@@ -11,6 +11,7 @@
   line-height: 20px;
   text-transform: uppercase;
   font-weight: normal;
+  width: 76px;
 }
 
 .catalog-item__text {
@@ -20,15 +21,108 @@
   font-family: "Arial", sans-serif;
 }
 
+.catalog-item {
+  border-top: 1px solid #d9d9d9;
+  padding: 19px 19px 14px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.catalog-item__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.catalog-item__inner {
+  width: 142px;
+}
+
+.catalog-item__button {
+  padding: 10px 0 10px 0;
+}
+
+.catalog-item__features {
+  width: 100%;
+}
+
+img.catalog-item__image {
+  margin: 18px 26px;
+}
+
 @media (min-width: @tablet-width) {
-  .catalog-item {
-    min-width: 324px;
+  .catalog {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .catalog__item {
+    width: auto;
+  }
+
+  .catalog-item__title {
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 23px;
+    padding-right: 36px;
+    margin-left: -1px;
+    width: 125px;
+  }
+
+  .catalog-item__text {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .catalog-item__wrapper {
+    display: block;
+  }
+
+  .catalog-item__inner {
+    width: calc(100% + 2px);
+    margin: 0;
+  }
+
+  .catalog-item__image-link {
+    margin-bottom: 34px;
+  }
+
+  .catalog-item__title-link {
+    display: inline-block;
+    width: 159px;
+  }
+
+  .catalog-item__features {
+    margin-bottom: 33px;
+  }
+
+  .catalog-item__row {
+    border-bottom: 1px solid #cdcdcd;
+    padding: 10px 0 8px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .catalog-item {
-    min-width: 245px;
+  .catalog {
     gap: 80px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 1440px;
+    padding: 0 110px;
+  }
+
+  .article.catalog__item.catalog-item {
+    width: 245px;
+  }
+
+  .catalog-item__title {
+    width: 145px;
   }
 }

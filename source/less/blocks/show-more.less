@@ -3,6 +3,7 @@
   line-height: 20px;
   text-transform: uppercase;
   font-weight: normal;
+  margin: 0 0 8px 0;
 }
 
 .show-more__description {
@@ -10,9 +11,54 @@
   line-height: 16px;
   color: #444444;
   font-family: "Arial", sans-serif;
+  margin: 0 0 12px 0;
 }
 
 .show-more__button {
   font-size: 16px;
   line-height: 20px;
+  padding: 10px 0 10px 0;
+}
+
+.show-more {
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 77px 20px 24px 20px;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+}
+
+.show-more::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icon-plus.svg");
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 26px;
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .show-more {
+    border: 1px solid #e5e5e5;
+    background-color: #ffffff;
+    padding: 152px 37px 37px;
+    box-sizing: border-box;
+    width: 245px;
+  }
+
+  .show-more__title {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .show-more__description {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }

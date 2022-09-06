@@ -9,3 +9,37 @@
   display: flex;
   justify-content: space-between;
 }
+
+.slider-image__wrapper {
+  width: 50%;
+  overflow: hidden;
+  position: absolute;
+}
+
+.slider-image__wrapper--after {
+  right: 0;
+}
+
+.slider-image__img--after {
+  transform: translateX(-50%);
+}
+
+.slider__bar::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4px;
+  height: 256px;
+  top: -257px;
+  left: 140px;
+  background-color: #666666;
+  border-radius: 2px;
+}
+
+.slider__bar {
+  position: relative;
+}
+
+.slider-image {
+  position: absolute;
+}

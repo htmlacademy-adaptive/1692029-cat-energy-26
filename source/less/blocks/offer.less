@@ -6,9 +6,33 @@
   background-size: cover;
   min-height: 289px;
   display: flex;
-  align-items: flex-end;
   justify-content: center;
+  padding: 50px 55px 42px;
+  box-sizing: border-box;
+  margin: 0 0 35px;
+  align-items: flex-end;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/offer-background@2x.png");
+    background-size: 100% auto;
+  }
 }
+
+.offer__text::before {
+  content: "";
+  display: block;
+  width: 78px;
+  height: 80px;
+  background-image: url("../img/icon-gift.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -109px;
+  position: absolute;
+}
+
 
 .offer__text {
   font-size: 16px;
@@ -16,11 +40,32 @@
   color: #ffffff;
   text-align: center;
   font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
 @media (min-width: @tablet-width) {
   .offer {
     min-height: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 46px;
+    background-position: -2px -319px;
+    background-size: cover;
+  }
+
+  .offer__text {
+    width: 161px;
+    text-align: left;
+  }
+
+  .offer__text::before {
+    position: absolute;
+    left: -405px;
+    top: -18%;
+    right: auto;
   }
 }
 
@@ -28,5 +73,6 @@
   .offer {
     min-height: 288px;
     width: 245px;
+    background-position: bottom;
   }
 }
