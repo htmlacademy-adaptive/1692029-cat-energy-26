@@ -14,6 +14,7 @@
   width: 50%;
   overflow: hidden;
   position: absolute;
+  height: 100%;
 }
 
 .slider-image__wrapper--after {
@@ -27,7 +28,6 @@
 .slider__bar::before {
   content: "";
   display: block;
-  position: absolute;
   width: 4px;
   height: 256px;
   top: -257px;
@@ -37,7 +37,10 @@
 }
 
 .slider__bar {
-  position: relative;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
 }
 
 .slider-image {

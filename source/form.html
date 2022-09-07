@@ -91,20 +91,22 @@
       </div>
       <fieldset class="form__owner">
         <div class="form__wrapper">
-        <legend class="form__name">Контактные данные (владельца кота)</legend>
-        <div class="form__inner">
+        <legend class="form__name form__name--contacts">Контактные данные (владельца кота)</legend>
+        <div class="form__name--contacts__wrapper">
+        <div class="form__inner form__inner--contacts">
         <label class="form__label" for="owner-email">Email:*</label>
         <input class="form__input" id="owner-email" type="email" name="owner-email" placeholder="kuklachev@gmail.com" required>
         </div>
-        <div class="form__inner">
+        <div class="form__inner form__inner--contacts">
         <label class="form__label" for="owner-phone">Телефон:*</label>
         <input class="form__input" id="owner-phone" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90" required>
+        </div>
         </div>
         </div>
       </fieldset>
       <fieldset class="form__comment">
         <div class="form__wrapper">
-        <legend class="form__name">Комментарий</legend>
+        <legend class="form__name form__name--comment">Комментарий</legend>
         <textarea class="form__input form__input--comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
       </fieldset>
@@ -113,19 +115,19 @@
         <legend class="form__name">Дополнительно</legend>
         <div class="form__additional-wrapper">
         <div class="form__inner form__inner--checkbox">
-        <input class="form__checkbox" id="sweet" type="checkbox" name="sweet" checked>
+        <input class="form__checkbox visually-hidden" id="sweet" type="checkbox" name="sweet" checked>
         <label class="form__label form__label--checkbox" for="sweet">Сахарозаменитель</label>
         </div>
         <div class="form__inner form__inner--checkbox">
-        <input class="form__checkbox" id="water" type="checkbox" name="water">
+        <input class="form__checkbox visually-hidden" id="water" type="checkbox" name="water">
         <label class="form__label form__label--checkbox" for="water">Питьевая вода</label>
         </div>
         <div class="form__inner form__inner--checkbox">
-        <input class="form__checkbox" id="milk" type="checkbox" name="milk">
+        <input class="form__checkbox visually-hidden" id="milk" type="checkbox" name="milk">
         <label class="form__label form__label--checkbox" for="milk">Молоко</label>
         </div>
         <div class="form__inner form__inner--checkbox">
-        <input class="form__checkbox" id="vitamins" type="checkbox" name="vitamins">
+        <input class="form__checkbox visually-hidden" id="vitamins" type="checkbox" name="vitamins">
         <label class="form__label form__label--checkbox" for="vitamins">Витамины</label>
         </div>
         </div>

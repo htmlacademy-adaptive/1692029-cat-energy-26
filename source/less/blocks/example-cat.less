@@ -73,6 +73,7 @@
   width: 280px;
   height: 256px;
   margin: 0 auto;
+  position: relative;
 }
 
 .example-cat__slider-image.slider-image {
@@ -96,6 +97,11 @@
     line-height: 24px;
     margin-bottom: 53px;
     padding-right: 10px;
+  }
+
+  .example-cat__slider-image.slider-image {
+    width: 560px;
+    position: relative;
   }
 
   .example-cat-info {
@@ -140,8 +146,6 @@
 
 @media (min-width: @desktop-width) {
   .example-cat {
-    display: grid;
-    grid-template-columns: 50% 50%;
     border: none;
     padding: 0;
   }
@@ -156,6 +160,7 @@
 
   .example-cat__description {
     grid-column: 1;
+    width: 436px;
   }
 
   .example-cat-info {
@@ -169,5 +174,10 @@
   .example-cat-info__exact-price {
     margin-left: auto;
     grid-column: 1;
+  }
+
+  .example-cat-info__price {
+    margin-left: 0;
+    display: flex;
   }
 }
