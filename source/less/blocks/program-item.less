@@ -80,6 +80,22 @@
   background-repeat: no-repeat;
 }
 
+
+.program-item__button:active {
+  color: rgba(17, 17, 17, 0.3);
+}
+
+.program-item__button:hover::after {
+  background-image: url("../img/icon-long-arrow.svg");
+  width: 33px;
+}
+
+.program-item__button:active::after {
+  background-image: url("../img/icon-long-arrow.svg");
+  width: 33px;
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .program-item__title {
     font-size: 36px;

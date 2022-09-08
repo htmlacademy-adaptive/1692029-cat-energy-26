@@ -45,6 +45,31 @@
   flex-grow: 1;
 }
 
+.form__input:focus {
+  border: 1px solid #000000;
+}
+
+.form__radio:checked + .form__label--radio::before {
+  background-color: #68b738;
+}
+
+.form__label--radio::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 17px;
+  height: 16px;
+  border: 9px solid #ffffff;
+  border-radius: 50%;
+  margin: -2px 16px 2px 15px;
+  box-shadow: 0 0 2px #cdcdcd;
+}
+
+.form__svg {
+  position: absolute;
+}
+
+
 textarea.form__input.form__input--comment {
   display: block;
   height: 150px;
@@ -206,6 +231,37 @@ textarea.form__input.form__input--comment {
   display: flex;
   align-items: center;
   margin-bottom: 14px;
+  position: relative;
+}
+
+.form__svg.form__svg--email {
+  top: 127px;
+  left: 268px;
+  position: absolute;
+  fill: #222222;
+  opacity: 0.8;
+}
+
+.form__svg.form__svg--email:focus,
+.form__svg--phone {
+  fill: #68b738;
+  outline: none;
+  border: none;
+}
+
+.form__label--checkbox:active,
+.form__label--radio:active {
+  opacity: 0.3;
+}
+
+.form__svg--phone {
+  right: 28px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 185px;
+  fill: #222222;
+  opacity: 0.8;
 }
 
 .form__wrapper {
@@ -243,6 +299,10 @@ textarea.form__input.form__input--comment {
     padding-left: 70px;
   }
 
+  .form__inner--radio {
+    padding-left: 0;
+  }
+
   .form__inner--checkbox {
     padding-left: 0;
   }
@@ -278,6 +338,16 @@ textarea.form__input.form__input--comment {
     line-height: 36px;
     padding-right: 42px;
     margin: 0;
+  }
+
+  .form__svg.form__svg--email {
+    top: 228px;
+    left: 667px;
+  }
+
+  .form__svg--phone {
+    right: 80px;
+    top: 298px;
   }
 
   .form__additional {
@@ -440,6 +510,16 @@ textarea.form__input.form__input--comment {
     line-height: 36px;
     margin-bottom: 76px;
     padding-left: 0;
+  }
+
+  .form__svg.form__svg--email {
+    top: 267px;
+    left: 521px;
+  }
+
+  .form__svg--phone {
+    right: 220px;
+    top: 268px;
   }
 
   .form__name--contacts__wrapper {
