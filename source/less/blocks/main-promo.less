@@ -7,6 +7,14 @@
   background-size: 320px 302px, 100%;
 }
 
+@media (min-resolution: 2dppx) {
+  .main-promo {
+    background-image: url("../img/index-background@2x.jpg"),
+      linear-gradient(180deg, #64a83b 302px, #ffffff 302px);
+    background-size: 320px auto;
+  }
+}
+
 .main-promo__wrapper {
   width: 320px;
   margin: 0 auto;
@@ -40,13 +48,12 @@
   height: 271px;
   display: block;
   margin-top: 29px;
-  margin-bottom: 2px;
   margin-right: auto;
   margin-left: auto;
 }
 
 .main-promo__button {
-  padding: 7px 0;
+  padding: 10px 0;
   font-size: 14px;
   line-height: 18px;
   width: 280px;

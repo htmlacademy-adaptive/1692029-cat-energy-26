@@ -21,6 +21,7 @@
 .site-list__item {
   text-align: center;
   border-top: 1px solid #e6e6e6;
+  position: relative;
 }
 
 @media (min-width: @tablet-width) {
@@ -30,6 +31,18 @@
     padding-right: 25px;
     font-weight: lighter;
     display: block;
+  }
+
+  .site-list__link:hover {
+    opacity: 0.6;
+  }
+
+  .site-list__link:active {
+    opacity: 0.3;
+  }
+
+  .site-list__link:focus {
+    opacity: 0.1;
   }
 
   .site-list__item {
@@ -61,6 +74,17 @@
     color: #ffffff;
     font-size: 18px;
     line-height: 24px;
+    position: relative;
+  }
+
+  .site-list__item-current::after {
+    width: 71px;
+    left: 895px;
+    bottom: 11px;
+    height: 2px;
+    background-color: #ffffff;
+    content: "";
+    position: absolute;
   }
 
   .site-list__link--catalog {
