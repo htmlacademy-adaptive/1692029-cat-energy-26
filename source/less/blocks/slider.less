@@ -42,7 +42,10 @@
 
 .slider__bar:active::before {
   background-color: #68b738;
-  opacity: 0.3;
+}
+
+.slider__bar:active {
+  opacity: 0.6;
 }
 
 .slider__bar {
@@ -60,7 +63,23 @@
   top: 0;
   transform: translateX(-50%);
   height: 100%;
+  fill: #ffffff;
+}
+
+.slider__bar:hover .slider__svg path {
+  fill: #68b738;
+}
+
+.slider__bar:hover .slider__svg rect:last-child {
+  stroke: #68b738;
+}
+
+.slider__bar .slider__svg path {
   fill: #666666;
+}
+
+.slider__bar .slider__svg rect:last-child {
+  stroke: #666666;
 }
 
 .slider-image {

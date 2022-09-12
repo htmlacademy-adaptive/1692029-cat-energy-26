@@ -76,7 +76,7 @@
   display: inline-block;
   width: 32px;
   height: 12px;
-  margin-left: 12px;
+  margin-left: 17px;
   background-image: url("../img/icon-arrow.svg");
   background-repeat: no-repeat;
 }
@@ -107,39 +107,58 @@
   .program-item__title::before {
     width: 200px;
     height: 200px;
-    top: 6px;
-    left: 400px;
+    top: 14px;
+    left: 393px;
   }
 
   .program-item__title--weight-loss::after {
     width: 200px;
     height: 196px;
-    left: 395px;
+    left: 394px;
+    top: 2px;
   }
 
   .program-item__title--weight-gain::after {
-    width: 200px;
+    width: 268px;
     height: 196px;
-    left: 395px;
-    top: 10px;
+    left: 360px;
+    top: 17px;
   }
 
   .program-item__description {
     font-size: 16px;
     line-height: 24px;
+    margin-top: 25px;
+    margin-bottom: 36px;
+    padding-right: 42px;
   }
 
   .program-item {
     width: 708px;
-    padding: 77px 281px 57px 52px;
+    padding: 76px 281px 57px 52px;
     box-sizing: border-box;
-    margin-bottom: 10px;
+    margin-bottom: 17px;
+    margin-top: 12px;
+  }
+
+  .program-item__button::after {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 12px;
+    margin-left: 17px;
+    background-image: url("../img/icon-arrow.svg");
+    background-repeat: no-repeat;
+    margin-top: -9px;
+    position: absolute;
+    left: 164px;
+    bottom: 66px;
   }
 
   .program-item__button {
     border: none;
     font-size: 20px;
-    line-height: 29px;
+    line-height: 30px;
   }
 }
 
@@ -149,32 +168,37 @@
     padding: 75px 50px 59px 52px;
   }
 
+  .program-item__button {
+    padding-top: 0;
+  }
+
   .program-item__title {
-    padding-left: 165px;
+    padding-left: 161px;
   }
 
   .program-item__description {
-    margin-top: 61px;
+    margin-top: 75px;
+    margin-bottom: 3px;
   }
 
   .program-item__title::before {
     width: 100px;
     height: 100px;
-    top: -37px;
-    left: -6px;
+    top: -27px;
+    left: 2px;
   }
 
   .program-item__title--weight-loss::after {
     width: 70px;
     height: 97px;
-    left: 8px;
-    top: -30px;
+    left: 14px;
+    top: -36px;
   }
 
   .program-item__title--weight-gain::after {
     width: 134px;
     height: 56px;
-    left: -28px;
-    top: -6px;
+    left: -19px;
+    top: -8px;
   }
 }
