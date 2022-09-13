@@ -170,11 +170,14 @@
     padding: 0 110px;
     box-sizing: border-box;
     grid-column: 1;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
   }
 
   .example-cat__title {
     padding-top: 0;
     margin-top: -39px;
+    grid-area: 1/1;
   }
 
   .example-cat__description {
@@ -184,10 +187,14 @@
 
   .example-cat-info {
     grid-column: 1;
+    flex-direction: column;
+    width: 366px;
   }
 
   .example-cat__slider-images {
     grid-row: 1/4;
+    width: 560px;
+    height: 512px;
   }
 
   .example-cat-info__exact-price {

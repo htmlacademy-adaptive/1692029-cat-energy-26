@@ -5,18 +5,19 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 
+
 // Styles
 
 export const styles = () => {
   return gulp.src('source/less/style.less', { sourcemaps: true })
-    .pipe(plumber())
-    .pipe(less())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
-    .pipe(browser.stream());
-}
+  .pipe(plumber())
+  .pipe(less())
+  .pipe(postcss([
+  autoprefixer()
+  ]))
+  .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+  .pipe(browser.stream());
+  }
 
 // Server
 
@@ -43,3 +44,4 @@ const watcher = () => {
 export default gulp.series(
   styles, server, watcher
 );
+

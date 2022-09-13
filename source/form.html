@@ -51,11 +51,11 @@
             <li class="site-list__item">
               <a class="site-list__link site-list__link--form" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item-current--form">
               <a class="site-list__link site-list__link--form" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link site-list__link--form site-list__link--current">Подбор программы</a>
+              <a class="site-list__link site-list__link--form site-list__link-current">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -76,7 +76,7 @@
         <input class="form__input" id="cat-weight" type="text" name="cat-weight" placeholder="7" required>
         </div>
         <div class="form__inner">
-        <label class="form__label" for="cat-age">Возраст (лет):</label>
+        <label class="form__label form__label--age" for="cat-age">Возраст (лет):</label>
         <input class="form__input" id="cat-age" type="text" name="cat-age" placeholder="7" required>
         </div>
       </fieldset>
@@ -102,20 +102,20 @@
         <div class="form__inner form__inner--contacts">
         <label class="form__label" for="owner-email">Email:*</label>
         <input class="form__input" id="owner-email" type="email" name="owner-email" placeholder="kuklachev@gmail.com" required>
-        </div>
         <div class="form__icon">
           <svg class="form__svg form__svg--email" width="17" height="17">
             <use xlink:href="#icon-mail"></use>
           </svg>
-        </div>
+        </div>  
+      </div>
         <div class="form__inner form__inner--contacts">
         <label class="form__label" for="owner-phone">Телефон:*</label>
         <input class="form__input" id="owner-phone" type="tel" name="owner-phone" placeholder="8 (960) 900-60-90" required>
-        </div>
         <div class="form__icon">
           <svg class="form__svg form__svg--phone" width="20" height="20">
             <use xlink:href="#icon-phone"></use>
           </svg>
+        </div>
         </div>
         </div>
         </div>
@@ -128,7 +128,7 @@
       </fieldset>
       <fieldset class="form__additional">
         <div class="form__wrapper">
-        <legend class="form__name">Дополнительно</legend>
+        <legend class="form__name form__name--additional">Дополнительно</legend>
         <div class="form__additional-wrapper">
         <div class="form__inner form__inner--checkbox">
         <input class="form__checkbox visually-hidden" id="sweet" type="checkbox" name="sweet" checked>
