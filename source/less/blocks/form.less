@@ -6,7 +6,7 @@
   text-transform: uppercase;
   margin: 0;
   width: 310px;
-  padding: 20px;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 
@@ -23,7 +23,7 @@
   border-bottom: 1px solid #d9d9d9;
   display: flex;
   flex-direction: column;
-  padding: 20px 20px 9px;
+  padding: 39px 20px 9px;
 }
 
 .form__input::placeholder {
@@ -40,7 +40,7 @@
   text-transform: uppercase;
   color: #444444;
   font-family: inherit;
-  padding: 12px 15px 13px;
+  padding: 6px 15px 13px;
   border: 1px solid #d9d9d9;
   flex-grow: 1;
 }
@@ -67,6 +67,8 @@
 
 .form__svg {
   position: absolute;
+  fill: #ffffff;
+  
 }
 
 
@@ -295,8 +297,8 @@ textarea.form__input.form__input--comment {
   }
 
   .form__inner {
-    padding-right: 37px;
     padding-left: 70px;
+    padding-right: 67px;
   }
 
   .form__inner--radio {
@@ -338,34 +340,42 @@ textarea.form__input.form__input--comment {
     line-height: 36px;
     padding-right: 42px;
     margin: 0;
+    padding: 0;
   }
 
   .form__svg.form__svg--email {
-    top: 228px;
-    left: 667px;
+    top: 20px;
+    left: 592px;
   }
 
   .form__svg--phone {
-    right: 80px;
-    top: 298px;
+    right: 17px;
+    top: 16px;
   }
 
   .form__additional {
     font-size: 36px;
     line-height: 36px;
-    padding-left: 39px;
-    padding-right: 42px;
+    padding: 0;
+    margin: 0;
   }
 
   .form__name--contacts {
     padding-left: 39px;
+    max-width: initial;
+    margin-left: -39px;
   }
 
   .form__inner--contacts {
-    padding-left: 39px;
+    padding: 0;
   }
 
   .form__name--comment {
+    padding-left: 39px;
+    margin-left: -39px;
+  }
+
+  .form__name--additional {
     padding-left: 39px;
   }
 
@@ -374,7 +384,8 @@ textarea.form__input.form__input--comment {
   }
 
   textarea.form__input.form__input--comment {
-    width: 631px;
+    width: 100%;
+    margin: 0;
   }
 
 
@@ -387,7 +398,7 @@ textarea.form__input.form__input--comment {
     margin-top: 12px;
     background-color: #68b738;
     z-index: -1;
-    left: calc((100vw - 266px) / 2);
+    left: 0;
     top: 26px;
   }
 
@@ -401,6 +412,7 @@ textarea.form__input.form__input--comment {
     left: 0;
     background-color: #68b738;
     z-index: -1;
+    top: 93px;
   }
 
   .form__additional::before {
@@ -409,7 +421,7 @@ textarea.form__input.form__input--comment {
     position: absolute;
     width: 100%;
     height: 3px;
-    margin-top: -50px;
+    margin-top: 10px;
     left: 0;
     background-color: #68b738;
     z-index: -1;
@@ -439,7 +451,7 @@ textarea.form__input.form__input--comment {
     width: 768px;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 0 30px;
+    padding: 0 70px;
   }
 }
 
@@ -513,13 +525,13 @@ textarea.form__input.form__input--comment {
   }
 
   .form__svg.form__svg--email {
-    top: 267px;
+    top: 19px;
     left: 521px;
   }
 
   .form__svg--phone {
-    right: 220px;
-    top: 268px;
+    right: 23px;
+    top: 20px;
   }
 
   .form__name--contacts__wrapper {

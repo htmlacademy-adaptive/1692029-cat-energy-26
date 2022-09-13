@@ -82,10 +82,29 @@
 
   .site-list__item-current::after {
     width: 71px;
-    left: 895px;
     bottom: 11px;
     height: 2px;
     background-color: #ffffff;
+    content: "";
+    position: absolute;
+  }
+
+  .site-list__item-current--catalog::after {
+    width: 163px;
+    bottom: 11px;
+    left: -1px;
+    height: 2px;
+    background-color: #68b738;
+    content: "";
+    position: absolute;
+  }
+
+  .site-list__item-current--form::after {
+    width: 163px;
+    bottom: 11px;
+    left: 181px;
+    height: 2px;
+    background-color: #68b738;
     content: "";
     position: absolute;
   }
